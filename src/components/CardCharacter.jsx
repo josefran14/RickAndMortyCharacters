@@ -34,20 +34,20 @@ export const CardCharacter = ({name,species,image,gender,origin,handleIncrement,
             }}
           />
           <Typography
-            sx={{ color: "white" }}
+            sx={{ color: "white", fontFamily: "cursive" }}
             gutterBottom
             variant="h5"
             component="div"
           >
             {name}
           </Typography>
-          <Typography sx={{ color: "white" }} variant="h6">
+          <Typography sx={{ color: "white", fontFamily: "cursive" }} variant="h6">
             {species}
           </Typography>
-          <Typography sx={{ color: "white" }} variant="h6">
+          <Typography sx={{ color: "white", fontFamily: "cursive" }} variant="h6">
             {gender}
           </Typography>
-          <Typography sx={{ color: "white" }} variant="h6">
+          <Typography sx={{ color: "white", fontFamily: "cursive" }} variant="h6">
             {origin.name}
           </Typography>
         </Box>
@@ -63,6 +63,7 @@ export const CardCharacter = ({name,species,image,gender,origin,handleIncrement,
             variant="contained"
             color="error"
             onClick={handleDecrement}
+            sx={{fontFamily: "cursive"}}
           >
             <ArrowBackIcon /> Last Character
           </Button>
@@ -70,7 +71,7 @@ export const CardCharacter = ({name,species,image,gender,origin,handleIncrement,
           <Button
             variant="contained"
             onClick={handleIncrement}
-            sx={{ marginLeft: "15px" }}
+            sx={{ marginLeft: "15px", fontFamily: "cursive" }}
           >
             Next Character <ArrowForwardIcon />
           </Button>

@@ -1,3 +1,4 @@
+import { Typography } from "@mui/material";
 import { CardCharacter } from "./components/CardCharacter";
 import { Loading } from "./components/Loading";
 import { useCounter } from "./hooks/useCounter";
@@ -13,7 +14,7 @@ export const App = () => {
 
   return (
     <>
-      <h1 style={{display: "flex", justifyContent: "center"}}>Rick and Morty Characters</h1>
+      <Typography variant="h4" sx={{display: "flex", justifyContent: "center", fontFamily: "cursive"}}>Rick and Morty Characters</Typography>
       <hr />
 
         {
